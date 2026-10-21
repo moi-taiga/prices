@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "agentStop": [
+      {
+        "type": "command",
+        "bash": "python -m pytest -q > failing-tests.txt 2>&1 && rm -f failing-tests.txt || true",
+        "timeoutSec": 120
+      }
+    ]
+  }
+}
