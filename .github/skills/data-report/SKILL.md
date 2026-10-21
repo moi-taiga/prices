@@ -1,7 +1,7 @@
 ---
 name: data-report
 description: Summarise a raw price file - dates, gaps, missing values and the largest daily changes.
-argument-hint: <ticker, for example ULVR_L>
+argument-hint: <ticker, for example ULVR.L>
 disable-model-invocation: true  # only runs when you type /data-report
 ---
 
