@@ -48,3 +48,15 @@ Each file has these columns:
 | `Volume` | Number of shares traded |
 
 Yahoo Finance data is for personal and educational use. See Yahoo's terms before using it for anything else.
+
+## Plot
+
+Generate a comparison chart of each stock's adjusted-price change since its first
+2024 trading day. Each ticker is plotted on its own trading dates, without filling
+in dates when its market was closed:
+
+```bash
+python scripts/plot_prices.py
+```
+
+The chart is saved to `figures/stock-price-performance-since-2024.png`.
